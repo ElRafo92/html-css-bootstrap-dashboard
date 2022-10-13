@@ -7,4 +7,13 @@
    main {
     flex-grow: 1;
     overflow-y: auto;
+    background-color: var(--bg-main);
+   }
+
+/* ====================
+        MAIN HEADER
+   ==================== */
+
+   .ms-main-header {
+     background-color: var(--primary-blue);
    }

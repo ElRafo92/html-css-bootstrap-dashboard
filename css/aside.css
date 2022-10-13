@@ -7,4 +7,6 @@
    aside {
     width: auto;
     padding: 1.25rem;
+    background-color: var(--bg-aside);
+    color: white;
    }

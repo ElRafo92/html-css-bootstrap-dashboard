@@ -1,0 +1,22 @@
+/* ====================
+   ====================
+        VARIABLES
+   ====================
+   ==================== */
+
+/* ====================
+        COLORS
+   ==================== */
+
+   :root {
+    --primary-blue: #1c71e8;
+    --bg-aside: #061e34;
+    --bg-main: #f8f9fa;
+    --bg-search: #e5e5e5;
+
+    --label-green: #198753;
+    --label-yellow: #ffc007;
+    --label-red: #dc3444;
+
+    --icon-bell: #ff8f00;
+}
