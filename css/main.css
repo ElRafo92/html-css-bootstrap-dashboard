@@ -5,8 +5,9 @@
    ==================== */
 
    main {
-    flex-grow: 1;
+    width: auto;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: var(--bg-main);
    }
 

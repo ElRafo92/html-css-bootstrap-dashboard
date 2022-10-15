@@ -5,6 +5,27 @@
    ====================
    ==================== */
 
-   header {
+header {
     height: 4.375rem;
+    padding: 0.625rem 0;
 }
+
+header li:last-of-type {
+    color: var(--icon-bell);
+}
+
+.ms-img-fluid {
+     width: 30%;
+     object-fit: cover;
+     min-width: 3.625rem;
+     min-height: 3.625rem;
+}
+
+
+
+
+
+
+
+
+

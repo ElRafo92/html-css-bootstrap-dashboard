@@ -22,10 +22,11 @@
 <body>
     <header class="">
         <div class="container-fluid h-100">
-            <div class="row align-items-center h-100">
+            <div class="row align-items-center h-100 w-100">
                 <div class="col-2">
-                    <div id="logo">
-                        LOGO
+                    <div id="logo" class=" align-items-center">
+                        <img class="ms-img-fluid d-lg-none" src="img/mobile-logo.png" alt="">
+                        <img class="d-none d-lg-block" src="img/logo.svg" alt="">
                     </div>
                 </div>
 
@@ -43,11 +44,11 @@
 
                 <div class="col-2">
                     <nav id="header-icons">
-                        <ul class="d-flex justify-content-between ms-list">
-                            <li><i class="fa-solid fa-list-ul"></i></li>
-                            <li><i class="fa-solid fa-circle-question"></i></li>
-                            <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
-                            <li><i class="fa-solid fa-bell orange"></i></li>
+                        <ul class="d-flex align-items-center justify-content-end ms-list">
+                            <li><i class="fa-solid fa-list-ul d-none d-lg-block p-2"></i></li>
+                            <li><i class="fa-solid fa-circle-question d-none d-lg-block p-2"></i></li>
+                            <li><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block p-2"></i></li>
+                            <li><i class="fa-solid fa-bell p-2"></i></li>
                         </ul>
                     </nav>
                 </div>
@@ -60,27 +61,73 @@
             <aside class="">
                 <div class="row justify-content-between flex-column h-100">
                     <div class="col d-flex flex-column">
-                        <i class="fa-solid fa-house my-2"></i>
-                        <i class="fa-solid fa-chart-simple my-2"></i>
-                        <i class="fa-solid fa-signal my-2"></i>
+                       <nav>
+                            <ul class="ms-list">
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-house my-2"></i><span class="d-none d-lg-block ps-3"> Home</span>
+                                </li>
+
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-chart-simple my-2"></i><span class="d-none d-lg-block ms-1 ps-3"> Stats</span>
+                                </li>
+
+                                <li class="d-flex">
+                                    <i class="fa-solid fa-signal my-2"></i><span class="d-none d-lg-block ps-3"> Signals</span>
+                                </li>
+                            </ul>
+                       </nav>
                     </div>
 
                     <div class="col-1">
-                        <i class="fa-solid fa-gear"></i>
+                        <nav>
+                            <ul class="ms-list">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa-solid fa-gear"></i><span class="d-none d-lg-block ps-3"> Admin</span>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </aside>
 
             <main class="">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between m-0">
                     <div class="col-12 py-5 ms-main-header">
                     </div>
 
-                    <div class="col-12 col-lg-7 debug-2">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quis rerum tempora reiciendis, illo necessitatibus excepturi consequuntur culpa vero debitis sequi blanditiis cupiditate quae eius sunt cum quas quasi quam?<p>
+                    <div class="col-12 col-lg-7 d-flex flex-column justify-content-center p-4">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
                     </div>
 
-                    <div class="col-12 col-lg-5 debug-2">
+                    <div class="col-12 col-lg-5">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusantium? Atque officia optio, et vel assumenda rem vero molestiae enim dolores quam odit architecto totam. Saepe, temporibus totam? Culpa, officia.<p>
                     </div>
 
