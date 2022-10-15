@@ -18,3 +18,13 @@
    .ms-main-header {
      background-color: var(--primary-blue);
    }
+
+/* ====================
+     MAIN TABLE
+==================== */
+
+tbody img {
+     width: 1.5625rem;
+     height: 1.5625rem;
+     object-fit: cover;
+}
