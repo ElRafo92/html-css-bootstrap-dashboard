@@ -31,15 +31,17 @@
                 </div>
 
                 <div class="col">
-                    <label for="exampleDataList" class="form-label position-absolute"></label>
-                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-                    <datalist id="datalistOptions">
-                        <option value="San Francisco">
-                        <option value="New York">
-                        <option value="Seattle">
-                        <option value="Los Angeles">
-                        <option value="Chicago">
-                    </datalist>
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                          <form class="d-flex text-center w-100" role="search">
+                            <input class="ms-form-control ms-bgcolor-search" list="datalistOptions" id="exampleDataList" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                            <datalist id="datalistOptions">
+                                <option value="Laravel">
+                            </datalist>
+                            
+                          </form>
+                        </div>
+                      </nav>
                 </div>
 
                 <div class="col-2">
@@ -48,7 +50,19 @@
                             <li><i class="fa-solid fa-list-ul d-none d-lg-block p-2"></i></li>
                             <li><i class="fa-solid fa-circle-question d-none d-lg-block p-2"></i></li>
                             <li><i class="fa-solid fa-ellipsis-vertical d-none d-lg-block p-2"></i></li>
-                            <li><i class="fa-solid fa-bell p-2"></i></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell orange p-2"></i>
+                                    </button>
+                                    
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -108,23 +122,22 @@
                                     </div>
     
                                 </th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
+                                <th class="d-none d-sm-table-cell"></th>
                                 <th class="align-middle">
                                     <div class="text-end fs-2">
                                         <button id="add-table" class="bg-white">
                                             <i class="fa-solid fa-plus"></i>
                                         </button>
-    
                                     </div>
-
                                 </th>
                               </tr>
+
                               <tr class="bg-white">
                                 <th class="fw-normal" scope="col">Nome</th>
                                 <th class="fw-normal" scope="col"></th>
@@ -137,6 +150,7 @@
                                 <th class="fw-normal" scope="col">Azioni</th>
                               </tr>
                             </thead>
+
                             <tbody>
                                 <tr class="align-middle bg-white">
                                     <th scope="row" colspan="5" class="fw-normal">
@@ -284,16 +298,44 @@
                             </tbody>
                         </table>
 
-                        <div id="faq">
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <h2>F.A.Q.</h2>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between">Come aggungere una nuova classe?<i class="fa-solid fa-chevron-down"></i></li>
-                                <li class="list-group-item d-flex justify-content-between">Come posso accedere alle informazioni del mio account?<i class="fa-solid fa-chevron-down"></i></li>
-                                <li class="list-group-item d-flex justify-content-between">Posso usare questa dashboard da mobile?<i class="fa-solid fa-chevron-down"></i></li>
-                              </ul>
-                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Accordion Item #1
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Accordion Item #2
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
 
                     <div class="col-12 col-lg d-flex flex-column p-3">

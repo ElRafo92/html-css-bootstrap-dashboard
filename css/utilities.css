@@ -51,3 +51,7 @@
     border: 1px solid black;
     border-radius: 0.625rem;
 }
+
+.ms-bgcolor-search {
+    background-color: red;
+}
