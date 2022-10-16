@@ -28,3 +28,14 @@ tbody img {
      height: 1.5625rem;
      object-fit: cover;
 }
+
+#add-table {
+     border: 0.0625rem solid var(--primary-blue);
+     color: var(--primary-blue);
+     border-radius: 0.3125rem;
+     padding: 0.625rem;
+     text-align: center;
+     line-height: 50%;
+     text-decoration: none;
+     display: inline-block;
+}
