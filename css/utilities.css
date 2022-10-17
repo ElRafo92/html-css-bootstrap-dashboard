@@ -55,3 +55,12 @@
 .ms-bgcolor-search {
     background-color: red;
 }
+
+/* ====================
+      LINK
+==================== */
+
+.ms-a {
+    text-decoration: none;
+    color: inherit;
+}
