@@ -15,9 +15,9 @@
     --bg-main: #f8f9fa;
     --bg-search: #e5e5e5;
 
-    --label-green: #198753;
-    --label-yellow: #ffc007;
-    --label-red: #dc3444;
+    --done: #198753;
+    --process: #ffc007;
+    --failed: #dc3444;
 
     --icon-bell: #ff8f00;
 }

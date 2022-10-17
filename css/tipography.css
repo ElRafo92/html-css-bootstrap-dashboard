@@ -13,7 +13,7 @@
    }
 
 /* ====================
-        FONT COLOR
+         COLOR
    ==================== */
 
    .orange {
@@ -22,4 +22,20 @@
 
    .ms-bg-blue-pills {
      background-color: var(--blue-pills);
+   }
+
+   /* ====================
+         BADGE COLORS
+   ==================== */
+
+   .ms-bg-done {
+     background-color: var(--done);
+   }
+
+   .ms-bg-process {
+     background-color: var(--process);
+   }
+
+   .ms-bg-failed {
+     background-color: var(--failed);
    }
